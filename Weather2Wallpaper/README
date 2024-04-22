@@ -1,0 +1,27 @@
+#######################################################################
+#                                                                     #
+#                       Weather2Wallpaper                             #
+#                                                                     #
+#  This program will Change your wallpaper depending on the           #
+#  weather of the city you choose using request-html module and       #
+#  ctypes.  This will only change the wallpaper on Windows for now.   #
+#                         Date: 4/18/2024                             #
+#                                                                     #
+#######################################################################
+
+
+
+========================== Update 4/19/2024 ===========================
+-Added new images for the weather conditions.
+-Added more conditions to the list.
+-Sorted weather conditions to better align with the new images.
+-Renamed time string to gTime for the time scraped from google.
+-Added new lists: sunCover, tStorm, colderRain
+-Added title string that will now show the City, State or Country 
+information from google in output.
+-Cleaned up the comments to cut down on clutter.
+
+------------------------------ TODO ----------------------------------
+-I would like to find a way to compare the time scraped from google and
+use that to change the wallpaper to a night mode if it is night in the
+searched city,town,state,country.
