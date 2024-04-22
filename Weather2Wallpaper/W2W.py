@@ -38,7 +38,7 @@ url = f'https://www.google.com/search?q=weather+{query}'
 # Fetches the data from the base url and uses the User Agent
 # to bypass the "Are you a bot" authentication and uses the google
 # 'my user agent' in the header
-r = s.get(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:124.0) Gecko/20100101 Firefox/124.0'})
+r = s.get(url, headers={'User-Agent': ''})
 
 #Scraps the information of the city the user searches for
 title = r.html.find('span.BBwThe', first=True).text
@@ -69,19 +69,19 @@ print('\033[0;36m'+weatherType+'\033[0;36m')
 # If the the data from watherType matches what is in the corresponding weather
 # list it then changes wallpaper to corresponding wallpaper using ctypes module.
 if weatherType in sun:
-  ctypes.windll.user32.SystemParametersInfoW(20, 0, "D:\Python\Weather2Wallpaper\Images\sun.png" , 0)
+  ctypes.windll.user32.SystemParametersInfoW(20, 0, "Weather2Wallpaper\Images\sun.png" , 0)
 elif weatherType in sunCover:
-  ctypes.windll.user32.SystemParametersInfoW(20, 0, "D:\Python\Weather2Wallpaper\Images\cloudy.png" , 0)
+  ctypes.windll.user32.SystemParametersInfoW(20, 0, "Weather2Wallpaper\Images\cloudy.png" , 0)
 elif weatherType in cloud:
-  ctypes.windll.user32.SystemParametersInfoW(20, 0, "D:\Python\Weather2Wallpaper\Images\cloud.png" , 0)
+  ctypes.windll.user32.SystemParametersInfoW(20, 0, "Weather2Wallpaper\Images\cloud.png" , 0)
 elif weatherType in rain:
-  ctypes.windll.user32.SystemParametersInfoW(20, 0, "D:\Python\Weather2Wallpaper\Images\water.png" , 0)
+  ctypes.windll.user32.SystemParametersInfoW(20, 0, "Weather2Wallpaper\Images\water.png" , 0)
 elif weatherType in tStorm:
-  ctypes.windll.user32.SystemParametersInfoW(20, 0, "D:\Python\Weather2Wallpaper\Images\storm.png" , 0)
+  ctypes.windll.user32.SystemParametersInfoW(20, 0, "Weather2Wallpaper\Images\storm.png" , 0)
 elif weatherType in coldRain:
-  ctypes.windll.user32.SystemParametersInfoW(20, 0, "D:\Python\Weather2Wallpaper\Images\snow.png" , 0)
+  ctypes.windll.user32.SystemParametersInfoW(20, 0, "Weather2Wallpaper\Images\snow.png" , 0)
 elif weatherType in colderRain:
-  ctypes.windll.user32.SystemParametersInfoW(20, 0, "D:\Python\Weather2Wallpaper\Images\snowandwater.png" , 0)
+  ctypes.windll.user32.SystemParametersInfoW(20, 0, "Weather2Wallpaper\Images\snowandwater.png" , 0)
  
 # If weatherType data is something not listed in the list
 # this will print a warning  
