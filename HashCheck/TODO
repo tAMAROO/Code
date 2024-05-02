@@ -1,0 +1,9 @@
+TODO:
+====================================================================================
+    
+-Insert a button to browse for files within the system to pull a hash from.
+-Find a way to pick which sum to use (MD5, SHA1, SHA256, SHA512).
+-Find a way to take chosen hash from drop down menu and run that has against the file, and insert the hash from file into the first entry box.
+-Make sure while pulling the sum it isn't overloading the memory.
+-Find a way to show a different label output for if entery box 1 is empty. and entry box 2 is empty and also if both entry boxes are empty.
+
