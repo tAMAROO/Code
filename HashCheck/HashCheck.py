@@ -1,3 +1,15 @@
+#######################################################################
+#                                                                     #
+#                       HashCheck                                     #
+#                                                                     #
+#   Program to check Hashes of downloads against the sums found       #
+#   on the program/iso/etc documentation against the sum the user     #
+#   has.                                                              #
+#                                                                     #
+#                                                                     #
+#######################################################################
+
+
 import tkinter as tk
 from tkinter import ttk
 from tkinter import *
