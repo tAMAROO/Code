@@ -1,3 +1,14 @@
+#######################################################################
+#                                                                     #
+#                       DLLCount                                      #
+#                                                                     #
+#   A simple script that counts the total number of .DLL files in     #
+#   the C:\ Directory and outputs the number.  Also shows the folders #
+#   that were not able to be opened, and outputs the total time       #
+#   it took for the script to run.                                    #
+#                                                                     #
+#######################################################################
+
 # Define variables
 $Path = "C:\"
 $Filter = "*.dll"
